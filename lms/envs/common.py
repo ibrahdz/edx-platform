@@ -4114,9 +4114,6 @@ OPTIONAL_APPS = [
 
     # Required by the Enterprise App
     ('django_object_actions', None),  # https://github.com/crccheck/django-object-actions
-
-    # Required by kwl XBlock. Added by ibrahdz
-    ('kwl.kwl_djangoapp', None) # https://github.com/edly-io/kwl-xblock
 ]
 
 for app_name, insert_before in OPTIONAL_APPS:
