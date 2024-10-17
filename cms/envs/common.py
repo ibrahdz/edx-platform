@@ -2009,6 +2009,9 @@ OPTIONAL_APPS = (
     ('integrated_channels.blackboard', None),
     ('integrated_channels.canvas', None),
     ('integrated_channels.moodle', None),
+    
+    # Required by kwl XBlock. Added by ibrahdz
+    ('kwl.kwl_djangoapp', None) # https://github.com/edly-io/kwl-xblock
 )
 
 
