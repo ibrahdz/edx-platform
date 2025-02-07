@@ -70,6 +70,6 @@ def clean_dangerous_html(html):
     """
     if not html:
         return html
-    cleaner = Cleaner(style=True, inline_style=False, safe_attrs_only=False)
+    cleaner = Cleaner(whitelist_tags={'iframe'}, host_whitelist='[www.youtube.com](http://www.youtube.com/)', style=True, inline_style=False, safe_attrs_only=False)
     html = cleaner.clean_html(html)
     return HTML(html)
